@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOEZY - Premium Footwear</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --bs-primary-rgb: 13, 110, 253;
+      }
+      .navbar {
+        transition: all 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow-lg sticky-top"
+        style="background-color: #1a1a2e"
+      >
+        <div class="container">
+          <a class="navbar-brand fw-bold fs-3" href="#">
+            <i class="fas fa-shoe-prints me-2"></i>SHOEZY
+          </a>
+
+          <button
+            class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center gap-lg-3 px-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active fw-semibold px-3 py-2 rounded-3"
+                  aria-current="page"
+                  href="#"
+                >
+                  <i class="fas fa-home me-1"></i> Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-semibold px-3 py-2 rounded-3"
+                  href="/about.html"
+                >
+                  <i class="fas fa-info-circle me-1"></i> About
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link fw-semibold px-3 py-2 rounded-3 dropdown-toggle"
+                  href="/productList.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="fas fa-shopping-bag me-1"></i> Products
+                </a>
+                <ul class="dropdown-menu shadow-sm border-0">
+                  <li><a class="dropdown-item" href="">Sneakers</a></li>
+                  <li><a class="dropdown-item" href="">Formal Shoes</a></li>
+                  <li><a class="dropdown-item" href="">Sports Shoes</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="/productList.html">All Products</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-semibold px-3 py-2 rounded-3"
+                  href="/contact.html"
+                >
+                  <i class="fas fa-envelope me-1"></i> Contact Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link position-relative fw-semibold px-3 py-2 rounded-3"
+                  href="/cart.html"
+                >
+                  <i class="fas fa-shopping-cart me-1"></i> Cart
+                  <span
+                    class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill"
+                    >3</span
+                  >
+                </a>
+              </li>
+              <li class="nav-item ms-lg-3">
+                <a
+                  class="btn btn-outline-light rounded-pill px-4 py-2 fw-semibold"
+                  href="#"
+                >
+                  <i class="fas fa-user me-1"></i> Login
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/carousel-5.avif"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/carousel-3.avif"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/carousel-4.avif"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+    <section>
+      <div>
+        <div>
+          <h1 class="p-5 d-flex justify-content-center">Special Offers</h1>
+        <div class="container">
+<div class="row row-cols-2 row-cols-md-4 g-5 gap-2 d-flex justify-content-center" >
+    <div class="col ">
+        <div class="card h-100" style="width: 18rem; text-align: center;">
+            <img src="assets/offer1.jpg" class="card-img-top" alt="Offer 1">
+            <div class="card-body">
+                <h5 class="card-title">Sneaker Sale</h5>
+                <p class="card-text">Up to 40% off on trending sneakers. Limited time only!</p>
+                <button type="button" class="btn btn-secondary">Add to cart</button>
+            </div>
+        </div>
+    </div>
+  
+    <div class="col">
+        <div class="card h-100" style="width: 18rem; text-align: center">
+            <img src="assets/offer6.jpg" class="card-img-top" alt="Offer 6">
+            <div class="card-body">
+                <h5 class="card-title">Premium Collection</h5>
+                <p class="card-text">Exclusive deals on premium footwear brands.</p>
+                <button type="button" class="btn btn-secondary">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100" style="width: 18rem;text-align: center">
+            <img src="assets/offer7.jpg" class="card-img-top" alt="Offer 7">
+            <div class="card-body">
+                <h5 class="card-title">Sandals & Slippers</h5>
+                <p class="card-text">Summer special: 25% off on sandals and slippers.</p>
+                <button type="button" class="btn btn-secondary">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100" style="width: 18rem;text-align: center">
+            <img src="assets/offer8.jpg" class="card-img-top" alt="Offer 8">
+            <div class="card-body">
+                <h5 class="card-title">Clearance Sale</h5>
+                <p class="card-text">Last chance! Clearance sale on selected styles.</p>
+                <button type="button" class="btn btn-secondary">Add to cart</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col">
+        <div class="card h-100" style="width: 18rem;text-align: center">
+            <img src="assets/offer8.jpg" class="card-img-top" alt="Offer 8">
+            <div class="card-body">
+                <h5 class="card-title"> Sale is On</h5>
+                <p class="card-text">Last chance! Clearance sale on selected styles.</p>
+               <button type="button" class="btn btn-secondary">Add to cart</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col">
+        <div class="card h-100" style="width: 18rem;text-align: center">
+            <img src="assets/offer8.jpg" class="card-img-top" alt="Offer 8">
+            <div class="card-body">
+                <h5 class="card-title"> Sale is On</h5>
+                <p class="card-text">Last chance! Clearance sale on selected styles.</p>
+               <button type="button" class="btn btn-secondary">Add to cart</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
