@@ -4,6 +4,8 @@
     box-sizing: border-box;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* card */
 .card-hover {
   transition: all 0.3s ease-in-out;
   border-radius: 1rem;
@@ -18,4 +20,46 @@
 }
 .card-hover:hover img {
   transform: scale(1.1);
+}
+
+/* cart */
+#cart {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 24px;
+  max-width: 400px;
+  margin: 32px auto;
+}
+#cart h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #222;
+  text-align: center;
+}
+
+#cart-items {
+    display: flex;
+    flex-direction: column;
+}
+.cart-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-details {
+    display: flex;
+    align-items: center;
+}
+.item-details img {
+    width: 50px;
+    margin-right: 10px;
+}
+#cart-total {
+    font-weight: bold;
+    margin-top: 20px;
 }
